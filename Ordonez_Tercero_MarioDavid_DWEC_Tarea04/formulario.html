@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/formulario.js"></script>
+    <style type="text/css">
+        label {
+            width: 170px;
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 160px;
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        fieldset {
+            background: #CCFF99;
+            width: 350px;
+            margin: 0 auto;
+            padding: 18px;
+        }
+
+        .botones {
+            width: 110px;
+            height: 25px;
+            background-color: cadetblue;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            border-radius: 8px;
+            margin: 6px 2px;
+            cursor: pointer;
+        }
+
+        .errores {
+            width: 375px;
+            height: auto;
+            background-color: darksalmon;
+            border-color: red;
+            margin: 0 auto;
+            padding: 5px;
+            border-radius: 7px;
+            color: red;
+        }
+
+        .intentos {
+            width: 375px;
+            height: auto;
+            background-color: chartreuse;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 7px;
+            color: green;
+            text-align: center;
+        }
+
+        .resultado {
+            width: 375px;
+            height: auto;
+            background-color: darkcyan;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 7px;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .botones2 {
+            width: 200px;
+            height: 50px;
+            background-color: cadetblue;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .contenedor {
+            width: 410px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <input type="button" name="login" id="login" value="Crear usuario" class="botones2">
+        <input type="button" name="productos" id="productos" value="Ingresar producto" class="botones2">
+    </div>
+    <div style="clear:both"></div>
+    <div id="errores"></div>
+    <fieldset>
+        <legend align="left">Datos del usuario</legend>
+        <form action="" method="post" name="formulario" id="formulario">
+            <label for="nombre">Nombre</label><input type="text" name="nombre" id="nombre">
+            <label for="apellido">Apellido</label><input type="text" name="apellido" id="apellido">
+            <label for="password1">Password</label><input type="password" name="password1" id="password1">
+            <label for="password2">Repite Password</label><input type="password" name="password2" id="password2">
+            <input type="reset" name="reiniciar" id="reiniciar" class="botones">
+            <input type="button" name="limpiarcampo" id="limpiarcampo" value="Limpiar campo" class="botones">
+            <input type="submit" name="enviar" id="enviar" class="botones">
+        </form>
+    </fieldset>
+    <div id="resultado" class="resultado"></div>
+    <div id="intentos" class="intentos"></div>
+    <footer>Mario David Ordoñez Tercero - Tarea 4 DWEC - 2017/2018</footer>
+</body>
+
+</html>

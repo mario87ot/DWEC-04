@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .botones{     
+        width:200px;
+        height:50px;
+        background-color:cadetblue;
+        color:white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor:pointer;
+    }
+    
+    .contenedor{
+        width:410px;
+        height: auto;
+        margin: 0 auto;
+    }   
+    
+    footer {
+        text-align: center;
+    }
+    
+</style>
+
+<body>
+
+    <div class="contenedor">
+        <input type="button" name="login" id="login" value="Crear usuario" class="botones">
+        <input type="button" name="productos" id="productos" value="Ingresar producto" class="botones">
+    </div>
+    <footer>Mario David Ordoñez Tercero - Tarea 4 DWEC - 2017/2018</footer>
+    <script>
+        window.onload = iniciar;
+
+        function iniciar() {
+            /*Inicialización de eventos de los botones del menú de la página
+            El evento de click lo programamos en la fase de burbujeo (false)*/
+            document.getElementById("login").addEventListener('click', function() {
+                window.location.href = "formulario.html"
+            }, false);
+            document.getElementById("productos").addEventListener('click', function() {
+                window.location.href = "formulario5.html"
+            }, false);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
