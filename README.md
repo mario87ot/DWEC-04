@@ -3,7 +3,6 @@ Tarea 4 Desarrollo Web en Entorno Cliente
 
 Tienda Buy More (Compra Más).
 
-trebory6. Buy More Logo Vector. (Todos los derechos reservados)
 En esta tarea vamos a realizar un par de páginas de una web de compra de productos llamada Buy More inspirada en la serie Chuck. Si no la habéis visto no la veáis por si os viciáis en Febrero en medio de los exámenes.
 Desde un índice van a colgar de la aplicación web va a tener las siguientes páginas:
     1. Sección de creación de usuario.
